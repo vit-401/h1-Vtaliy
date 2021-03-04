@@ -1,0 +1,80 @@
+.message {
+
+}
+
+.messageInner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  max-width: 368px;
+  background-color: #B5E51D;
+  padding: 20px;
+}
+
+.img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.massageWrap {
+  border-radius: 10px 10px 10px 0;
+  max-width: 250px;
+  width: 100%;
+  min-height: 80px;
+  height: 100%;
+  background-color: #082103;
+  padding: 10px;
+  position: relative;
+
+  &::after {
+    content: '';
+    display: block;
+    left: -9px;
+    width: 13px;
+    height: 20px;
+    background-color: #082103;
+    position: absolute;
+    bottom: 0;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    left: -25px;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    background-color: #B5E51D;
+    position: absolute;
+    bottom: 1px;
+    z-index: 20;
+  }
+}
+
+.massageName {
+  color: #8576B2;
+  font-weight: 500;
+}
+
+.massageText {
+  color: #BCC8BD
+}
+
+.massageTime {
+  font-weight: 400;
+  color: #30492B;
+  position: relative;
+  text-align: right;
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 2px;
+    height: 4px;
+    background-color: #B5E51D;
+    left: -12px;
+    bottom: 6px;
+    z-index: 40;
+  }
+}
